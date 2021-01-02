@@ -3,7 +3,7 @@ export default {
     'prev': null,
     'next': null,
     config: { "root": "/", ...projectConfig, branch: 'main' },
-    'pagePath': "test_pages/front_matter.md",
+    'pagePath': "prml/front_matter.md",
     'layoutPath': "_layout.tsx",
     'outputPath': "test_pages/front_matter_test.html",
     'title': "Front matter test",
@@ -26,7 +26,7 @@ export default {
         "biskur"
     ],
     'date': "2021-01-02T09:02:07.000Z",
-    'updated': null,
+    'updated': "2021-01-02T16:52:11.000Z",
     'excerpt': "This is a front matter test page. The front matter content outputPath: test_pages/front_matter_test.html title: Front matter test toc: null prev: null next: null ",
     'cover': undefined,
     'sidebar': [
@@ -36,26 +36,31 @@ export default {
             "pagePath": "introduction/README.md"
         },
         {
-            "link": "test_pages/index.html",
+            "link": "prml/index.html",
             "children": [
                 {
+                    "text": "引言",
+                    "link": "prml/ch01.html",
+                    "pagePath": "prml/ch01.md"
+                },
+                {
                     "text": "Markdown test",
-                    "link": "test_pages/markdown_test.html",
-                    "pagePath": "test_pages/markdown_test.md"
+                    "link": "prml/markdown_test.html",
+                    "pagePath": "prml/markdown_test.md"
                 },
                 {
                     "text": "Front matter test",
                     "link": "test_pages/front_matter_test.html",
-                    "pagePath": "test_pages/front_matter.md"
+                    "pagePath": "prml/front_matter.md"
                 },
                 {
                     "text": "React hooks test",
-                    "link": "test_pages/react_hooks_test.html",
-                    "pagePath": "test_pages/react_hooks_test.tsx"
+                    "link": "prml/react_hooks_test.html",
+                    "pagePath": "prml/react_hooks_test.tsx"
                 }
             ],
-            "pagePath": "test_pages/README.md",
-            "text": "Test pages"
+            "pagePath": "prml/README.md",
+            "text": "Pattern Recognition and Machine Learning"
         },
         {
             "text": "Folder",

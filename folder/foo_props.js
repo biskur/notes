@@ -2,7 +2,7 @@ import projectConfig from '/notes/pagic.config.js';
 export default {
     'prev': {
         "text": "React hooks test",
-        "link": "test_pages/react_hooks_test.html"
+        "link": "prml/react_hooks_test.html"
     },
     'next': {
         "text": "Custom sidebar text",
@@ -42,26 +42,31 @@ export default {
             "pagePath": "introduction/README.md"
         },
         {
-            "link": "test_pages/index.html",
+            "link": "prml/index.html",
             "children": [
                 {
+                    "text": "引言",
+                    "link": "prml/ch01.html",
+                    "pagePath": "prml/ch01.md"
+                },
+                {
                     "text": "Markdown test",
-                    "link": "test_pages/markdown_test.html",
-                    "pagePath": "test_pages/markdown_test.md"
+                    "link": "prml/markdown_test.html",
+                    "pagePath": "prml/markdown_test.md"
                 },
                 {
                     "text": "Front matter test",
                     "link": "test_pages/front_matter_test.html",
-                    "pagePath": "test_pages/front_matter.md"
+                    "pagePath": "prml/front_matter.md"
                 },
                 {
                     "text": "React hooks test",
-                    "link": "test_pages/react_hooks_test.html",
-                    "pagePath": "test_pages/react_hooks_test.tsx"
+                    "link": "prml/react_hooks_test.html",
+                    "pagePath": "prml/react_hooks_test.tsx"
                 }
             ],
-            "pagePath": "test_pages/README.md",
-            "text": "Test pages"
+            "pagePath": "prml/README.md",
+            "text": "Pattern Recognition and Machine Learning"
         },
         {
             "text": "Folder",

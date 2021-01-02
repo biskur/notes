@@ -10,9 +10,9 @@ export default {
         "link": "folder/foo.html"
     },
     config: { "root": "/", ...projectConfig, branch: 'main' },
-    'pagePath': "test_pages/react_hooks_test.tsx",
+    'pagePath': "prml/react_hooks_test.tsx",
     'layoutPath': "_layout.tsx",
-    'outputPath': "test_pages/react_hooks_test.html",
+    'outputPath': "prml/react_hooks_test.html",
     'title': "React hooks test",
     'content': React.createElement(ReactHooksTest, { config: {
             branch: 'main',
@@ -63,11 +63,12 @@ export default {
                     'introduction/README.md',
                     {
                         children: [
-                            'test_pages/markdown_test.md',
-                            'test_pages/front_matter.md',
-                            'test_pages/react_hooks_test.tsx'
+                            'prml/ch01.md',
+                            'prml/markdown_test.md',
+                            'prml/front_matter.md',
+                            'prml/react_hooks_test.tsx'
                         ],
-                        link: 'test_pages/README.md'
+                        link: 'prml/README.md'
                     },
                     {
                         children: [
@@ -89,7 +90,7 @@ export default {
                 editOnGitHub: true
             },
             watch: false
-        }, content: null, head: null, layoutPath: "_layout.tsx", outputPath: "test_pages/react_hooks_test.html", pagePath: "test_pages/react_hooks_test.tsx", script: null, title: "React hooks test" }),
+        }, content: null, head: null, layoutPath: "_layout.tsx", outputPath: "prml/react_hooks_test.html", pagePath: "prml/react_hooks_test.tsx", script: null, title: "React hooks test" }),
     'head': null,
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
@@ -102,26 +103,31 @@ export default {
             "pagePath": "introduction/README.md"
         },
         {
-            "link": "test_pages/index.html",
+            "link": "prml/index.html",
             "children": [
                 {
+                    "text": "引言",
+                    "link": "prml/ch01.html",
+                    "pagePath": "prml/ch01.md"
+                },
+                {
                     "text": "Markdown test",
-                    "link": "test_pages/markdown_test.html",
-                    "pagePath": "test_pages/markdown_test.md"
+                    "link": "prml/markdown_test.html",
+                    "pagePath": "prml/markdown_test.md"
                 },
                 {
                     "text": "Front matter test",
                     "link": "test_pages/front_matter_test.html",
-                    "pagePath": "test_pages/front_matter.md"
+                    "pagePath": "prml/front_matter.md"
                 },
                 {
                     "text": "React hooks test",
-                    "link": "test_pages/react_hooks_test.html",
-                    "pagePath": "test_pages/react_hooks_test.tsx"
+                    "link": "prml/react_hooks_test.html",
+                    "pagePath": "prml/react_hooks_test.tsx"
                 }
             ],
-            "pagePath": "test_pages/README.md",
-            "text": "Test pages"
+            "pagePath": "prml/README.md",
+            "text": "Pattern Recognition and Machine Learning"
         },
         {
             "text": "Folder",
