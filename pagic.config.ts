@@ -7,8 +7,8 @@ export default {
 
   theme: 'docs',
   plugins: ['sidebar', 'prev_next'],
-  title: 'Pagic template docs',
-  description: 'Use this template to create a Pagic site with the docs theme',
+  title: 'Reading notes',
+  description: 'Tracking what I am learning',
   // To use jsx syntax, please rename this file to pagic.config.tsx
   // head: <>
   //   <link rel="icon" type="image/png" href="/favicon.png" />
@@ -18,10 +18,6 @@ export default {
     {
       text: 'Docs',
       link: '/notes/introduction/index.html',
-    },
-    {
-      text: 'Pagic',
-      link: 'https://pagic.org/',
     },
     {
       text: 'About',
