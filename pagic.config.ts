@@ -30,8 +30,8 @@ export default {
     '/': [
       'introduction/README.md',
       {
-        link: 'test_pages/README.md',
-        children: ['test_pages/markdown_test.md', 'test_pages/front_matter.md', 'test_pages/react_hooks_test.tsx'],
+        link: 'prml/README.md',
+        children: ['prml/ch01.md', 'prml/markdown_test.md', 'prml/front_matter.md', 'prml/react_hooks_test.tsx'],
       },
       {
         text: 'Folder',
