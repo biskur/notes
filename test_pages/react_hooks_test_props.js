@@ -16,7 +16,7 @@ export default {
     'title': "React hooks test",
     'content': React.createElement(ReactHooksTest, { config: {
             branch: 'main',
-            description: 'Use this template to create a Pagic site with the docs theme',
+            description: 'Tracking what I am learning',
             exclude: [
                 '**/.*',
                 '**/package.json',
@@ -36,10 +36,6 @@ export default {
                 {
                     link: '/notes/introduction/index.html',
                     text: 'Docs'
-                },
-                {
-                    link: 'https://pagic.org/',
-                    text: 'Pagic'
                 },
                 {
                     align: 'right',
@@ -87,7 +83,7 @@ export default {
             },
             srcDir: '.',
             theme: 'docs',
-            title: 'Pagic template docs',
+            title: 'Reading notes',
             tools: {
                 backToTop: true,
                 editOnGitHub: true
