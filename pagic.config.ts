@@ -3,7 +3,7 @@
 export default {
   srcDir: '.',
   exclude: ['LICENSE'],
-  root: '/my_docs/',
+  root: '/notes/',
 
   theme: 'docs',
   plugins: ['sidebar', 'prev_next'],
@@ -17,7 +17,7 @@ export default {
   nav: [
     {
       text: 'Docs',
-      link: '/my_docs/introduction/index.html',
+      link: '/notes/introduction/index.html',
     },
     {
       text: 'Pagic',
@@ -25,11 +25,11 @@ export default {
     },
     {
       text: 'About',
-      link: '/my_docs/about/index.html',
+      link: '/notes/about/index.html',
       align: 'right',
     },
   ],
-  github: 'https://github.com/xcatliu/my_docs',
+  github: 'https://github.com/biskur/notes',
   sidebar: {
     '/': [
       'introduction/README.md',
