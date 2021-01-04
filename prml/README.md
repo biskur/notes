@@ -11,7 +11,7 @@
 8. Graphical Models - 图模型
 9. Mixture Models and EM - 混合模型与期望最大化
 10. Approximate Inference - 近似推断
-11. Sampling Methods - 采样方法
+11. Sampling Methods - 抽样方法
 12. Continuous Latent Variables - 连续潜变量
 13. Sequential Data - 顺序模型
 14. Combining Models - 组合模型
