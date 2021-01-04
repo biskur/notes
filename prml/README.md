@@ -1,17 +1,17 @@
-# Pattern Recognition and Machine Learning
+# 模式识别与机器学习(Pattern Recognition and Machine Learning)
 
-## TOC
+## 目录
 1. [Introduction - 引言](./ch01.md)
-2. Probability Distributions - 概率分布
-3. Linear Models for Regression - 线性回归模型
-4. Linear Models for Classification - 线性分类模型
-5. Neural Networks - 神经网络
-6. Kernel Methods - 核方法
-7. Sparse Kernel Machines - 稀疏核机
-8. Graphical Models - 图模型
-9. Mixture Models and EM - 混合模型与期望最大化
-10. Approximate Inference - 近似推断
-11. Sampling Methods - 抽样方法
-12. Continuous Latent Variables - 连续潜变量
-13. Sequential Data - 顺序模型
-14. Combining Models - 组合模型
+2. [Probability Distributions - 概率分布](./ch02.md)
+3. [Linear Models for Regression - 线性回归模型](./ch03.md)
+4. [Linear Models for Classification - 线性分类模型](./ch04.md)
+5. [Neural Networks - 神经网络](./ch05.md)
+6. [Kernel Methods - 核方法](./ch06.md)
+7. [Sparse Kernel Machines - 稀疏核机](./ch07.md)
+8. [Graphical Models - 图模型](./ch08.md)
+9. [Mixture Models and EM - 混合模型与期望最大化](./ch09.md)
+10. [Approximate Inference - 近似推断](./ch10.md)
+11. [Sampling Methods - 抽样方法](./ch11.md)
+12. [Continuous Latent Variables - 连续潜变量](./ch12.md)
+13. [Sequential Data - 顺序模型](./ch13.md)
+14. [Combining Models - 组合模型](./ch14.md)
