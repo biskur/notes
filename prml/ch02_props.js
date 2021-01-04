@@ -117,6 +117,28 @@ export default {
             ],
             "pagePath": "prml/README.md",
             "text": "模式识别与机器学习(Pattern Recognition and Machine Learning)"
+        },
+        {
+            "link": "ling/index.html",
+            "children": [
+                {
+                    "text": "A Course in Phonetics",
+                    "link": "ling/acip.html",
+                    "pagePath": "ling/acip.md"
+                },
+                {
+                    "text": "南吳韻母",
+                    "link": "ling/shi2013.html",
+                    "pagePath": "ling/shi2013.md"
+                },
+                {
+                    "text": "计量语言学导论",
+                    "link": "ling/i2ql.html",
+                    "pagePath": "ling/i2ql.md"
+                }
+            ],
+            "pagePath": "ling/README.md",
+            "text": "语言学文献阅读摘记"
         }
     ]
 };

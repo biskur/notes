@@ -46,6 +46,14 @@ export default {
                     'prml/ch14.md',
                 ],
             },
+            {
+                link: 'ling/README.md',
+                children: [
+                    'ling/acip.md',
+                    'ling/shi2013.md',
+                    'ling/i2ql.md',
+                ],
+            },
         ],
     },
     tools: {

@@ -1,0 +1,261 @@
+<!doctype html><html class="" data-reactroot=""><head><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous"/>
+<meta data-react-helmet="true" charset="utf-8"/><meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"/><meta data-react-helmet="true" name="description" content="Tracking what I am learning"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1"/>
+<title data-react-helmet="true">A Course in Phonetics · Reading notes</title>
+<link data-react-helmet="true" rel="stylesheet" href="/notes/assets/index.css"/><link data-react-helmet="true" id="prismTheme" rel="stylesheet" href="/notes/assets/prism.css"/>
+<script data-react-helmet="true" >
+    const shouldSetIsDark = document.cookie.includes('is_dark=1') ? true : document.cookie.includes('is_dark=0') ? false : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (shouldSetIsDark) {
+      document.documentElement.classList.add('is_dark');
+      document.getElementById('prismTheme').href = "/notes/assets/prism_tomorrow.css";
+    }
+  </script>
+</head><body><header><h1 class="hide_on_mobile"><a href="/notes/">Reading notes</a></h1><nav><ul><li class="show_on_mobile flex_center"><a class="czs-menu-l" href="#" style="background-image:url(&quot;/notes/assets/czs-menu-l.svg&quot;)"></a></li><li class="show_on_mobile"><h1 class="mobile_title"><a href="/notes/">Reading notes</a></h1></li><li class="hide_on_mobile"><a href="/notes/introduction/index.html">Docs</a></li><li style="flex-grow:1"></li><li class="hide_on_mobile"><a href="/notes/about/index.html">About</a></li><li class="flex_center"><a class="czs-github-logo" href="https://github.com/biskur/notes" target="_blank" style="background-image:url(&quot;/notes/assets/czs-github-logo.svg&quot;)"></a></li><li class="toggle_dark flex_center"><span class="czs-sun" style="background-image:url(&quot;/notes/assets/czs-sun.svg&quot;)"></span><span class="czs-sun-l" style="background-image:url(&quot;/notes/assets/czs-sun-l.svg&quot;)"></span><span class="czs-moon" style="background-image:url(&quot;/notes/assets/czs-moon.svg&quot;)"></span><span class="czs-moon-l" style="background-image:url(&quot;/notes/assets/czs-moon-l.svg&quot;)"></span></li></ul></nav></header><aside class="sidebar"><ol class="list_style_none"><li class=""><a href="/notes/introduction/index.html" class="nav_link">Introduction</a></li><li class="unfold"><a href="/notes/prml/index.html" class="nav_link">模式识别与机器学习(Pattern Recognition and Machine Learning)<span class="czs-angle-up-l" style="background-image:url(&quot;/notes/assets/czs-angle-up-l.svg&quot;)"></span><span class="czs-angle-down-l" style="background-image:url(&quot;/notes/assets/czs-angle-down-l.svg&quot;)"></span></a><ol class="list_style_none"><li class=""><a href="/notes/prml/ch01.html" class="nav_link">引言</a></li><li class=""><a href="/notes/prml/ch02.html" class="nav_link">概率分布</a></li><li class=""><a href="/notes/prml/ch03.html" class="nav_link">线性回归模型</a></li><li class=""><a href="/notes/prml/ch04.html" class="nav_link">线性分类模型</a></li><li class=""><a href="/notes/prml/ch05.html" class="nav_link">神经网络</a></li><li class=""><a href="/notes/prml/ch06.html" class="nav_link">核方法</a></li><li class=""><a href="/notes/prml/ch07.html" class="nav_link">稀疏核机</a></li><li class=""><a href="/notes/prml/ch08.html" class="nav_link">图模型</a></li><li class=""><a href="/notes/prml/ch09.html" class="nav_link">混合模型与期望最大化</a></li><li class=""><a href="/notes/prml/ch10.html" class="nav_link">近似推断</a></li><li class=""><a href="/notes/prml/ch11.html" class="nav_link">抽样方法</a></li><li class=""><a href="/notes/prml/ch12.html" class="nav_link">连续潜变量</a></li><li class=""><a href="/notes/prml/ch13.html" class="nav_link">顺序模型</a></li><li class=""><a href="/notes/prml/ch14.html" class="nav_link">组合模型</a></li></ol></li><li class="unfold"><a href="/notes/ling/index.html" class="nav_link">语言学文献阅读摘记<span class="czs-angle-up-l" style="background-image:url(&quot;/notes/assets/czs-angle-up-l.svg&quot;)"></span><span class="czs-angle-down-l" style="background-image:url(&quot;/notes/assets/czs-angle-down-l.svg&quot;)"></span></a><ol class="list_style_none"><li class=""><a href="/notes/ling/acip.html" class="nav_link active">A Course in Phonetics</a></li><li class=""><a href="/notes/ling/shi2013.html" class="nav_link">南吳韻母</a></li><li class=""><a href="/notes/ling/i2ql.html" class="nav_link">计量语言学导论</a></li></ol></li></ol></aside><section class="main"><div class="main_article"><article><h1>A Course in Phonetics</h1>
+<h2 id="1-articulation-and-acoustics">1 Articulation and Acoustics<a class="anchor" href="#1-articulation-and-acoustics">§</a></h2>
+<p>肺部鼓气，唇舌调节</p>
+<p>声带窄而震 voiced</p>
+<p>声带宽不震 voiceless</p>
+<p>喉上 vocal tract 分 oral 和 nasal</p>
+<p>语音机制四组件 气流、发声、口鼻、调音</p>
+<p>语音传播靠声波</p>
+<p>调音部位 labial 唇 coronal 舌冠 dorsal 舌背</p>
+<p>调音方式 stop nasal fricative approximant lateral trill tap affricate</p>
+<p>辅音五要素 声带状态 调音部位 中央/边缘调音 软腭状态 调音方式</p>
+<p>元音三要素 舌体高度 舌头前后位置 圆唇程度</p>
+<p>元音相区别 共振峰(特征泛音)</p>
+<p>第一共振峰 creaky 第二共振峰 whispering</p>
+<p>英语重音 增加响度 夸张音段 夸张音调</p>
+<h2 id="2-phonology-and-phonetic-transcription">2 Phonology and Phonetic Transcription<a class="anchor" href="#2-phonology-and-phonetic-transcription">§</a></h2>
+<p>音位 phoneme 同位音 allophone</p>
+<p>转写 broad narrow</p>
+<h2 id="3-the-consonants-of--english">3 The Consonants of  English<a class="anchor" href="#3-the-consonants-of--english">§</a></h2>
+<p>阻音 obstruent</p>
+<ul>
+<li>不带音：元音短、辅音长</li>
+<li>带音：元音长、辅音短</li>
+</ul>
+<p>两者都影响元音长度、都受毗邻是否带音的影响</p>
+<p>塞擦音 tʃ dʒ 具有音系学意义</p>
+<p>美式 l 带软腭化 英式元音前不带软腭化</p>
+<p>ʍ 越来越少见</p>
+<ol>
+<li>短语末尾的辅音较长</li>
+<li>音节首的不带音塞音(如/p, t, k/)送气</li>
+<li>阻音(如/b, d, ɡ, v, ð, z, ʒ/)在词尾或不带音前带音</li>
+<li>所谓塞音和塞擦音(/b, d, ɡ, dʒ/)在词首不带音除非之前有带音</li>
+<li>不带音塞音(/p, t, k/)在/s/之后不送气</li>
+<li>不带音阻音(/p, t, k, tʃ, f, θ, s, ʃ/)在词尾比对应带音阻音(/b, d, ɡ, dʒ, v, ð, z, ʒ/)长</li>
+<li>近音(/w, r, j, l/)在词首/p, t, k/之后至少部分不带音</li>
+<li>连续塞音姿势叠加，塞音在塞音之前不爆破</li>
+<li>多数英语口音中，音节尾/p, t, k/伴随喉塞姿势</li>
+<li>多数英语口音中，/t/在齿龈鼻音前被喉塞音替代</li>
+<li>鼻音在词尾若紧跟阻音可以自成音节</li>
+<li>边音/l/在词尾若紧跟辅音可以自成音节</li>
+</ol>
+<ul>
+<li>流音/l, r/在词尾若紧跟辅音可以自成音节</li>
+</ul>
+<ol start="13">
+<li>齿龈塞音在两个元音(后一个非重音)之间变为带声闪音</li>
+</ol>
+<ul>
+<li>齿龈塞音和齿龈鼻音加塞音在两个元音(后一个非重音)之间变为带声闪音</li>
+</ul>
+<ol start="14">
+<li>连续塞音姿势叠加，齿龈辅音在齿辅音前变为齿音</li>
+<li>齿龈塞音在两个辅音之间简化或省略</li>
+<li>同一个词中，同部位清塞音可出现在鼻音与不带声擦音之间，该擦音之后为非重音元音</li>
+<li>辅音在同一个辅音之前缩短</li>
+<li>软腭塞音在前元音之前变得更靠前</li>
+<li>边音/l/在元音之后或词尾辅音之前软腭化</li>
+</ol>
+<h2 id="4-english-vowels">4 English Vowels<a class="anchor" href="#4-english-vowels">§</a></h2>
+<p>元音音质空间 高/低 前/后</p>
+<p>听觉音质≠舌位</p>
+<p>卷舌元音ɝ有两种发音方法</p>
+<p>口音差异 系统 分布 音质</p>
+<p>松紧元音 silent e</p>
+<ol>
+<li>其他条件相同时，元音长度：开音节&gt;以带声辅音结尾&gt;以不带声辅音结尾</li>
+<li>其他条件相同时，元音长度：重读音节&gt;非重读音节</li>
+<li>其他条件相同时，元音长度：单音节词&gt;双音节词&gt;多于双音节词</li>
+<li>简化元音在不带声塞音前或者后可能不带声</li>
+<li>元音在以鼻音结尾的音节之前鼻化</li>
+<li>元音在[ɫ]之前回撤</li>
+</ol>
+<h2 id="5-english-words-and-sentences">5 English Words and Sentences<a class="anchor" href="#5-english-words-and-sentences">§</a></h2>
+<p>重音等级</p>
+<p>音节{重读{腔调重读;非腔调重读};非重读{非简化元音;简化元音}}</p>
+<p>形成三级 tonic accent/stress/full vowel</p>
+<h2 id="6-airstream-mechanisms-and-phonation-types">6 Airstream Mechanisms and Phonation Types<a class="anchor" href="#6-airstream-mechanisms-and-phonation-types">§</a></h2>
+<p>气流/方向/名称</p>
+<p>pulmonic/egressive/plosive</p>
+<p>glottalic/egressive/ejective</p>
+<p>glottalic/ingressive/implosive</p>
+<p>velaric/ingressive/click</p>
+<p>声带张开的尺寸和时机影响不带声不送气、不带声送气、带声气声塞音</p>
+<h2 id="7-consonantal-gestures">7 Consonantal Gestures<a class="anchor" href="#7-consonantal-gestures">§</a></h2>
+<p>调音部位</p>
+<p>bilabial双唇 labiodental唇齿 dental齿 alveolar龈 retroflex卷舌 palato-alveolar腭龈 palatal硬腭 velar软腭 uvular小舌 pharyngeal喉 labial velar唇软腭协同</p>
+<p>调音方式</p>
+<p>nasal (stop)鼻音 (oral) stop塞音 fricative擦音 approximant近音 trill颤音 tap闪音 flap拍音</p>
+<p>lateral边~音 central央~音</p>
+<p>辅音描述</p>
+<ol>
+<li>气流机制</li>
+<li>气流方向</li>
+<li>声门状态</li>
+<li>牵涉舌部</li>
+<li>调音部位</li>
+<li>是边是央</li>
+<li>是口是鼻</li>
+<li>调音方式</li>
+</ol>
+<h2 id="8-acoustic-phonetics">8 Acoustic Phonetics<a class="anchor" href="#8-acoustic-phonetics">§</a></h2>
+<p>高频、低频分量的直观认识</p>
+<p>Source/Filter理论 等径管假设共振峰公式 Fn = (2n-1)*c/4L 式中L指vocal tract实际resonating portion部分的长度</p>
+<p>vocal tract的共振(resonance)独立于vocal fold的震动(vibration)频率</p>
+<p>tube model &amp; perturbation theory</p>
+<p>压力(P)极大值导致频率↗ 速度(V)极大值导致频率↘</p>
+<pre class="language-autoit"><code class="language-autoit">ə   glottis             lips
+F1 P                    V
+F2 P     V     P     V
+F3 P  V  P  V  P  V
+</code></pre>
+<p>spectrogram 宽带 窄带</p>
+<p>F1-F2 plot Bark scale</p>
+<p>元音高低由F1指示</p>
+<p>F1与F2越接近则元音越後</p>
+<p>辅音</p>
+<p>locus</p>
+<p>voice bar</p>
+<p>velar pinch F2与F3接近的状态</p>
+<p>能量 塞音t&gt;k&gt;p 擦音最高</p>
+<p>基频 谐波</p>
+<p>speech-synthesis speech-recognition voice-prints</p>
+<h2 id="9-vowels-and-vowel-like-articulations">9 Vowels and Vowel-like Articulations<a class="anchor" href="#9-vowels-and-vowel-like-articulations">§</a></h2>
+<p>元音图 F1—(F2-F1) plot</p>
+<p>超左上角[i]为硬颚音[ʝ] 超右下角[ɑ]为喉音[ʕ]</p>
+<p>定位元音(cardinal vowel) by Daniel Jones</p>
+<p>auditorily equidistant step</p>
+<p>元音高度≠元音舌位高度</p>
+<p><img src="../assets/vowel.png" alt="vowel"></p>
+<p>唇部动作 protruded/compressed</p>
+<p>充分感知分别(sufficient perceptual separation)原则</p>
+<p>前元音加圆唇减少高阶共振峰</p>
+<p>后元音减圆唇增加高阶共振峰</p>
+<p>如要最大化元音差异则需前元音非圆唇而后元音圆唇</p>
+<p>ATR区分元音宽(+)窄(-)</p>
+<p>元音R化(rhotacization)导致F3降低</p>
+<p>元音音质小结 高度 height/后度 backness/rhotacization R化/rounding 圆唇度/ATR 咽宽/nasalization 鼻化</p>
+<p>syllabic和vocoid两个维度 元音属于syllabic vocoid/半元音属于nonsyllabic vocoid/辅音属于nonvocoid</p>
+<p>次要调音 [ʲ] palatalization (硬)颚(音)化/[ˠ] velarization 软颚(音)化/[ˤ] pharyngealization 咽(音)化/[ʷ] labialization 唇(音)化</p>
+<h2 id="10-syllables-and-suprasegmental-features">10 Syllables and Suprasegmental Features<a class="anchor" href="#10-syllables-and-suprasegmental-features">§</a></h2>
+<p>响度(sonority)序列 低元音&gt;高元音&gt;鼻音&gt;带声擦音&gt;不带声擦音&gt;不带声塞音</p>
+<p>音节的响度/显著度理论</p>
+<p>音节的语音计划单元说</p>
+<p>语音技术的音节划分算法倾向于最大化onset而不是coda</p>
+<p>重音分语言 variable word stress可变单词重音/fixed word stress固定单词重音/fixed phrase stress固定短语重音</p>
+<p>用PVI(pairwise variability index)测量重音时机(stress timing)的强弱</p>
+<p>音高(pitch) 影响词义叫音调(tone) 影响句法叫腔调(intonation)</p>
+<p>single pitch target vs characteristic pitch movement</p>
+<h2 id="11-linguistic-phonetics">11 Linguistic Phonetics<a class="anchor" href="#11-linguistic-phonetics">§</a></h2>
+<p>特征层级(feature hierarchy)</p>
+<pre class="language-autoit"><code class="language-autoit"><span class="token number">1</span> segment
+<span class="token number">1.1</span> supra<span class="token operator">-</span>laryngeal
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1</span> place
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.1</span> labial
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1</span> bilabial
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2</span> labiodental
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.2</span> coronal
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.2</span><span class="token punctuation">.</span><span class="token number">1</span> dental
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.2</span><span class="token punctuation">.</span><span class="token number">2</span> alveolar
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.2</span><span class="token punctuation">.</span><span class="token number">3</span> palato<span class="token operator">-</span>alveolar
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.2</span><span class="token punctuation">.</span><span class="token number">4</span> retroflex
+<span class="token operator">*</span> coronal more elaborate
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.2</span><span class="token punctuation">.</span><span class="token number">1</span> laminal
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.2</span><span class="token punctuation">.</span><span class="token number">1.1</span> linguo<span class="token operator">-</span>labial
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.2</span><span class="token punctuation">.</span><span class="token number">1.2</span> interdental
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.2</span><span class="token punctuation">.</span><span class="token number">1.3</span> laminal dental
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.2</span><span class="token punctuation">.</span><span class="token number">1.4</span> laminal alveolar
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.2</span><span class="token punctuation">.</span><span class="token number">1.5</span> laminal post<span class="token operator">-</span>alveolar <span class="token operator">=</span> palato<span class="token operator">-</span>alveolar
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.2</span><span class="token punctuation">.</span><span class="token number">2</span> apical
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.2</span><span class="token punctuation">.</span><span class="token number">2.1</span> apical dental
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.2</span><span class="token punctuation">.</span><span class="token number">2.2</span> apical alveolar
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.2</span><span class="token punctuation">.</span><span class="token number">2.3</span> apical post<span class="token operator">-</span>alveolar
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.2</span><span class="token punctuation">.</span><span class="token number">3</span> sub<span class="token operator">-</span>apical
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.2</span><span class="token punctuation">.</span><span class="token number">3.1</span> sub<span class="token operator">-</span>apical palatal <span class="token operator">=</span> retroflex
+<span class="token operator">*</span> coronal
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.3</span> dorsal
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.3</span><span class="token punctuation">.</span><span class="token number">1</span> palatal
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.3</span><span class="token punctuation">.</span><span class="token number">2</span> velar
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.3</span><span class="token punctuation">.</span><span class="token number">3</span> uvular
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.4</span> radical
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.4</span><span class="token punctuation">.</span><span class="token number">1</span> pharyngeal
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.4</span><span class="token punctuation">.</span><span class="token number">2</span> epiglottal
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.5</span> glottal
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">1.5</span><span class="token punctuation">.</span><span class="token number">1</span> glottal
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2</span> manner
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span> aperture
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">1</span> stop
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">1.1</span> stop
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">2</span> fricative
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">2.1</span> sibilant
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">2.2</span> nonsibilant
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">3</span> approximant
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">4</span> vowel
+<span class="token operator">*</span> vowel <span class="token operator">and</span> approximant dominated
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">3</span><span class="token operator">-</span><span class="token number">4.1</span> height
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">3</span><span class="token operator">-</span><span class="token number">4.1</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token number">1</span> high
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">3</span><span class="token operator">-</span><span class="token number">4.1</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token number">2</span> mid<span class="token operator">-</span>high
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">3</span><span class="token operator">-</span><span class="token number">4.1</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token number">3</span> mid
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">3</span><span class="token operator">-</span><span class="token number">4.1</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token number">4</span> mid<span class="token operator">-</span>low
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">3</span><span class="token operator">-</span><span class="token number">4.1</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token number">5</span> low
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">3</span><span class="token operator">-</span><span class="token number">4.2</span> backness
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">3</span><span class="token operator">-</span><span class="token number">4.2</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token number">1</span> front
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">3</span><span class="token operator">-</span><span class="token number">4.2</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token number">2</span> central
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">3</span><span class="token operator">-</span><span class="token number">4.2</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token number">3</span> back
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">3</span><span class="token operator">-</span><span class="token number">4.3</span> rounding
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">3</span><span class="token operator">-</span><span class="token number">4.3</span><span class="token punctuation">.</span><span class="token number">1</span> protrusion
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">3</span><span class="token operator">-</span><span class="token number">4.3</span><span class="token punctuation">.</span><span class="token number">1.1</span> protruded
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">3</span><span class="token operator">-</span><span class="token number">4.3</span><span class="token punctuation">.</span><span class="token number">1.2</span> retracted
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">3</span><span class="token operator">-</span><span class="token number">4.3</span><span class="token punctuation">.</span><span class="token number">2</span> compression
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">3</span><span class="token operator">-</span><span class="token number">4.3</span><span class="token punctuation">.</span><span class="token number">2.1</span> compressed
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">3</span><span class="token operator">-</span><span class="token number">4.3</span><span class="token punctuation">.</span><span class="token number">2.2</span> separated
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">3</span><span class="token operator">-</span><span class="token number">4.4</span> tongue root
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">3</span><span class="token operator">-</span><span class="token number">4.4</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token number">1</span> <span class="token operator">+</span>ATR
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">3</span><span class="token operator">-</span><span class="token number">4.4</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token number">2</span> <span class="token operator">-</span>ATR <span class="token operator">=</span> pharyngealized
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">3</span><span class="token operator">-</span><span class="token number">4.5</span> rhotic
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.1</span><span class="token punctuation">.</span><span class="token number">3</span><span class="token operator">-</span><span class="token number">4.5</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token number">1</span> rhotacized
+<span class="token operator">*</span> vowel <span class="token operator">and</span> approximant
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.2</span> tap
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.2</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token number">1</span> tap
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.3</span> trill
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">2.3</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token number">1</span> trill
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">3</span> nasality
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">4</span> laterality
+<span class="token number">1.2</span> laryngeal
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">4.1</span> glottal stricture
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">4.1</span><span class="token punctuation">.</span><span class="token number">1</span> voiceless
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">4.1</span><span class="token punctuation">.</span><span class="token number">2</span> breathy voice
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">4.1</span><span class="token punctuation">.</span><span class="token number">3</span> <span class="token punctuation">(</span>modal<span class="token punctuation">)</span> voice
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">4.1</span><span class="token punctuation">.</span><span class="token number">4</span> creaky voice
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">4.1</span><span class="token punctuation">.</span><span class="token number">5</span> closed
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">4.2</span> glottal timing
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">4.2</span><span class="token punctuation">.</span><span class="token number">1</span> aspirated
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">4.2</span><span class="token punctuation">.</span><span class="token number">2</span> unaspirated
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">4.3</span> glottal movement
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">4.3</span><span class="token punctuation">.</span><span class="token number">1</span> raising
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">4.3</span><span class="token punctuation">.</span><span class="token number">2</span> stationary
+<span class="token number">1.1</span><span class="token punctuation">.</span><span class="token number">4.3</span><span class="token punctuation">.</span><span class="token number">3</span> lowering
+<span class="token number">1.3</span> airstream
+<span class="token number">1.3</span><span class="token punctuation">.</span><span class="token number">1</span> pulmonic
+<span class="token number">1.3</span><span class="token punctuation">.</span><span class="token number">1.1</span> modal airstream
+<span class="token number">1.3</span><span class="token punctuation">.</span><span class="token number">2</span> velaric
+<span class="token number">1.3</span><span class="token punctuation">.</span><span class="token number">2.1</span> click
+</code></pre>
+<p>speech production</p>
+<p>speech motor control</p>
+<p>degree of freedom problem</p>
+<p>coordinative structure</p>
+<p>motor equivalence - trading</p>
+<p>speaker: ease of articulation vs listener: sufficient perceptual separation</p></article><div class="prev_next"><a class="prev button" href="/notes/ling/index.html">«  <!-- -->语言学文献阅读摘记</a><a class="next button" href="/notes/ling/shi2013.html">南吳韻母<!-- -->  »</a></div></div><div class="main_toc_container nav_link_container"><div class="main_toc"><aside><nav class="toc"><ol><li><a href="#1-articulation-and-acoustics">1 Articulation and Acoustics</a></li><li><a href="#2-phonology-and-phonetic-transcription">2 Phonology and Phonetic Transcription</a></li><li><a href="#3-the-consonants-of--english">3 The Consonants of  English</a></li><li><a href="#4-english-vowels">4 English Vowels</a></li><li><a href="#5-english-words-and-sentences">5 English Words and Sentences</a></li><li><a href="#6-airstream-mechanisms-and-phonation-types">6 Airstream Mechanisms and Phonation Types</a></li><li><a href="#7-consonantal-gestures">7 Consonantal Gestures</a></li><li><a href="#8-acoustic-phonetics">8 Acoustic Phonetics</a></li><li><a href="#9-vowels-and-vowel-like-articulations">9 Vowels and Vowel-like Articulations</a></li><li><a href="#10-syllables-and-suprasegmental-features">10 Syllables and Suprasegmental Features</a></li><li><a href="#11-linguistic-phonetics">11 Linguistic Phonetics</a></li></ol></nav></aside></div></div></section><footer>Powered by <a href="https://github.com/xcatliu/pagic" target="_blank">Pagic</a></footer><div class="tools flex_center hide_on_mobile"><a class="czs-pen button" href="https://github.com/biskur/notes/edit/main/./ling/acip.md" target="_blank" style="background-image:url(&quot;/notes/assets/czs-pen.svg&quot;)"></a><a class="czs-angle-up-l button" href="#" style="background-image:url(&quot;/notes/assets/czs-angle-up-l.svg&quot;)"></a></div><script src="https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js"></script><script src="https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js"></script><script type="module" src="/notes/index.js"></script></body></html>

@@ -1,103 +1,40 @@
 import projectConfig from '/notes/pagic.config.js';
-import ReactHooksTest from './react_hooks_test_content.js';
 export default {
-    'prev': undefined,
-    'next': undefined,
+    'prev': {
+        "text": "组合模型",
+        "link": "prml/ch14.html"
+    },
+    'next': {
+        "text": "A Course in Phonetics",
+        "link": "ling/acip.html"
+    },
     config: { "root": "/", ...projectConfig, branch: 'main' },
-    'pagePath': "prml/react_hooks_test.tsx",
+    'pagePath': "ling/README.md",
     'layoutPath': "_layout.tsx",
-    'outputPath': "prml/react_hooks_test.html",
-    'title': "React hooks test",
-    'content': React.createElement(ReactHooksTest, { config: {
-            branch: 'main',
-            description: 'Tracking what I am learning',
-            exclude: [
-                '**/.*',
-                '**/package.json',
-                '**/package-lock.json',
-                '**/node_modules',
-                'pagic.config.ts',
-                'pagic.config.tsx',
-                '**/config.gypi',
-                '**/CVS',
-                '**/npm-debug.log',
-                'LICENSE',
-                'dist'
-            ],
-            github: 'https://github.com/biskur/notes',
-            include: undefined,
-            nav: [
-                {
-                    link: '/notes/introduction/index.html',
-                    text: 'Docs'
-                },
-                {
-                    align: 'right',
-                    link: '/notes/about/index.html',
-                    text: 'About'
-                }
-            ],
-            outDir: 'dist',
-            plugins: [
-                'clean',
-                'init',
-                'md',
-                'tsx',
-                'script',
-                'layout',
-                'out',
-                'sidebar',
-                'prev_next'
-            ],
-            port: 8000,
-            root: '/notes/',
-            serve: false,
-            sidebar: {
-                '/': [
-                    'introduction/README.md',
-                    {
-                        children: [
-                            'prml/ch01.md',
-                            'prml/ch02.md',
-                            'prml/ch03.md',
-                            'prml/ch04.md',
-                            'prml/ch05.md',
-                            'prml/ch06.md',
-                            'prml/ch07.md',
-                            'prml/ch08.md',
-                            'prml/ch09.md',
-                            'prml/ch10.md',
-                            'prml/ch11.md',
-                            'prml/ch12.md',
-                            'prml/ch13.md',
-                            'prml/ch14.md'
-                        ],
-                        link: 'prml/README.md'
-                    },
-                    {
-                        children: [
-                            'ling/acip.md',
-                            'ling/shi2013.md',
-                            'ling/i2ql.md'
-                        ],
-                        link: 'ling/README.md'
-                    }
-                ]
-            },
-            srcDir: '.',
-            theme: 'docs',
-            title: 'Reading notes',
-            tools: {
-                backToTop: true,
-                editOnGitHub: true
-            },
-            watch: false
-        }, content: null, head: null, layoutPath: "_layout.tsx", outputPath: "prml/react_hooks_test.html", pagePath: "prml/react_hooks_test.tsx", script: null, title: "React hooks test" }),
-    'head': null,
+    'outputPath': "ling/index.html",
+    'title': "语言学文献阅读摘记",
+    'content': React.createElement("article", { dangerouslySetInnerHTML: {
+            __html: '<h1>语言学文献阅读摘记</h1>'
+        } }),
+    'head': React.createElement(React.Fragment, null,
+        React.createElement("link", { crossOrigin: "anonymous", href: "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css", integrity: "sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X", rel: "stylesheet" })),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/notes/index.js", type: "module" })),
+    'contentTitle': React.createElement("h1", { key: "0" }, "\u8BED\u8A00\u5B66\u6587\u732E\u9605\u8BFB\u6458\u8BB0"),
+    'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
+            __html: ''
+        } }),
+    'toc': null,
+    'author': "biskur",
+    'contributors': [
+        "biskur"
+    ],
+    'date': "2021-01-04T17:11:54.000Z",
+    'updated': null,
+    'excerpt': "",
+    'cover': undefined,
     'sidebar': [
         {
             "text": "Introduction",
