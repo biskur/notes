@@ -1,20 +1,14 @@
 import projectConfig from '/notes/pagic.config.js';
 export default {
-    'prev': {
-        "text": "React hooks test",
-        "link": "prml/react_hooks_test.html"
-    },
-    'next': {
-        "text": "Custom sidebar text",
-        "link": "folder/bar.html"
-    },
+    'prev': undefined,
+    'next': undefined,
     config: { "root": "/", ...projectConfig, branch: 'main' },
-    'pagePath': "folder/foo.md",
+    'pagePath': "prml/ch13.md",
     'layoutPath': "_layout.tsx",
-    'outputPath': "folder/foo.html",
-    'title': "Foo",
+    'outputPath': "prml/ch13.html",
+    'title': "顺序模型",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>Foo</h1>\n<p>The foo page.</p>'
+            __html: '<h1>顺序模型</h1>'
         } }),
     'head': React.createElement(React.Fragment, null,
         React.createElement("link", { crossOrigin: "anonymous", href: "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css", integrity: "sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X", rel: "stylesheet" })),
@@ -22,18 +16,18 @@ export default {
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/notes/index.js", type: "module" })),
-    'contentTitle': React.createElement("h1", { key: "0" }, "Foo"),
+    'contentTitle': React.createElement("h1", { key: "0" }, "\u987A\u5E8F\u6A21\u578B"),
     'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<p>The foo page.</p>'
+            __html: ''
         } }),
     'toc': null,
     'author': "biskur",
     'contributors': [
         "biskur"
     ],
-    'date': "2021-01-02T09:02:07.000Z",
+    'date': "2021-01-04T16:14:46.000Z",
     'updated': null,
-    'excerpt': "The foo page.",
+    'excerpt': "",
     'cover': undefined,
     'sidebar': [
         {

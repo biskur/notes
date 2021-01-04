@@ -47,23 +47,13 @@ export default {
                     "pagePath": "prml/ch01.md"
                 },
                 {
-                    "text": "Markdown test",
-                    "link": "prml/markdown_test.html",
-                    "pagePath": "prml/markdown_test.md"
-                },
-                {
-                    "text": "Front matter test",
-                    "link": "test_pages/front_matter_test.html",
-                    "pagePath": "prml/front_matter.md"
-                },
-                {
                     "text": "React hooks test",
                     "link": "prml/react_hooks_test.html",
                     "pagePath": "prml/react_hooks_test.tsx"
                 }
             ],
             "pagePath": "prml/README.md",
-            "text": "Pattern Recognition and Machine Learning"
+            "text": "模式识别与机器学习(Pattern Recognition and Machine Learning)"
         },
         {
             "text": "Folder",
