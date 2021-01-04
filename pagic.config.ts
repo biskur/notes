@@ -49,6 +49,14 @@ export default {
           // 'prml/react_hooks_test.tsx'
         ],
       },
+      {
+        link: 'ling/README.md',
+        children: [
+          'ling/acip.md',
+          'ling/shi2013.md',
+          'ling/i2ql.md',
+        ],
+      },
       // {
       //   text: 'Folder',
       //   children: [
