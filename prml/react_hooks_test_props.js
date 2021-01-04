@@ -1,14 +1,8 @@
 import projectConfig from '/notes/pagic.config.js';
 import ReactHooksTest from './react_hooks_test_content.js';
 export default {
-    'prev': {
-        "text": "引言",
-        "link": "prml/ch01.html"
-    },
-    'next': {
-        "text": "Foo",
-        "link": "folder/foo.html"
-    },
+    'prev': undefined,
+    'next': undefined,
     config: { "root": "/", ...projectConfig, branch: 'main' },
     'pagePath': "prml/react_hooks_test.tsx",
     'layoutPath': "_layout.tsx",
@@ -64,21 +58,21 @@ export default {
                     {
                         children: [
                             'prml/ch01.md',
-                            'prml/markdown_test.md',
-                            'prml/front_matter.md',
-                            'prml/react_hooks_test.tsx'
+                            'prml/ch02.md',
+                            'prml/ch03.md',
+                            'prml/ch04.md',
+                            'prml/ch05.md',
+                            'prml/ch06.md',
+                            'prml/ch07.md',
+                            'prml/ch08.md',
+                            'prml/ch09.md',
+                            'prml/ch10.md',
+                            'prml/ch11.md',
+                            'prml/ch12.md',
+                            'prml/ch13.md',
+                            'prml/ch14.md'
                         ],
                         link: 'prml/README.md'
-                    },
-                    {
-                        children: [
-                            'folder/foo.md',
-                            {
-                                link: 'folder/bar.md',
-                                text: 'Custom sidebar text'
-                            }
-                        ],
-                        text: 'Folder'
                     }
                 ]
             },
@@ -111,28 +105,73 @@ export default {
                     "pagePath": "prml/ch01.md"
                 },
                 {
-                    "text": "React hooks test",
-                    "link": "prml/react_hooks_test.html",
-                    "pagePath": "prml/react_hooks_test.tsx"
+                    "text": "概率分布",
+                    "link": "prml/ch02.html",
+                    "pagePath": "prml/ch02.md"
+                },
+                {
+                    "text": "线性回归模型",
+                    "link": "prml/ch03.html",
+                    "pagePath": "prml/ch03.md"
+                },
+                {
+                    "text": "线性分类模型",
+                    "link": "prml/ch04.html",
+                    "pagePath": "prml/ch04.md"
+                },
+                {
+                    "text": "神经网络",
+                    "link": "prml/ch05.html",
+                    "pagePath": "prml/ch05.md"
+                },
+                {
+                    "text": "核方法",
+                    "link": "prml/ch06.html",
+                    "pagePath": "prml/ch06.md"
+                },
+                {
+                    "text": "稀疏核机",
+                    "link": "prml/ch07.html",
+                    "pagePath": "prml/ch07.md"
+                },
+                {
+                    "text": "图模型",
+                    "link": "prml/ch08.html",
+                    "pagePath": "prml/ch08.md"
+                },
+                {
+                    "text": "混合模型与期望最大化",
+                    "link": "prml/ch09.html",
+                    "pagePath": "prml/ch09.md"
+                },
+                {
+                    "text": "近似推断",
+                    "link": "prml/ch10.html",
+                    "pagePath": "prml/ch10.md"
+                },
+                {
+                    "text": "抽样方法",
+                    "link": "prml/ch11.html",
+                    "pagePath": "prml/ch11.md"
+                },
+                {
+                    "text": "连续潜变量",
+                    "link": "prml/ch12.html",
+                    "pagePath": "prml/ch12.md"
+                },
+                {
+                    "text": "顺序模型",
+                    "link": "prml/ch13.html",
+                    "pagePath": "prml/ch13.md"
+                },
+                {
+                    "text": "组合模型",
+                    "link": "prml/ch14.html",
+                    "pagePath": "prml/ch14.md"
                 }
             ],
             "pagePath": "prml/README.md",
             "text": "模式识别与机器学习(Pattern Recognition and Machine Learning)"
-        },
-        {
-            "text": "Folder",
-            "children": [
-                {
-                    "text": "Foo",
-                    "link": "folder/foo.html",
-                    "pagePath": "folder/foo.md"
-                },
-                {
-                    "text": "Custom sidebar text",
-                    "link": "folder/bar.html",
-                    "pagePath": "folder/bar.md"
-                }
-            ]
         }
     ]
 };

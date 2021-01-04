@@ -29,18 +29,23 @@ export default {
             'introduction/README.md',
             {
                 link: 'prml/README.md',
-                children: ['prml/ch01.md', 'prml/markdown_test.md', 'prml/front_matter.md', 'prml/react_hooks_test.tsx'],
-            },
-            {
-                text: 'Folder',
                 children: [
-                    'folder/foo.md',
-                    {
-                        text: 'Custom sidebar text',
-                        link: 'folder/bar.md'
-                    }
-                ]
-            }
+                    'prml/ch01.md',
+                    'prml/ch02.md',
+                    'prml/ch03.md',
+                    'prml/ch04.md',
+                    'prml/ch05.md',
+                    'prml/ch06.md',
+                    'prml/ch07.md',
+                    'prml/ch08.md',
+                    'prml/ch09.md',
+                    'prml/ch10.md',
+                    'prml/ch11.md',
+                    'prml/ch12.md',
+                    'prml/ch13.md',
+                    'prml/ch14.md',
+                ],
+            },
         ],
     },
     tools: {
