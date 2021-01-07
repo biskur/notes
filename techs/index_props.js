@@ -1,20 +1,14 @@
 import projectConfig from '/notes/pagic.config.js';
 export default {
-    'prev': {
-        "text": "稀疏核机",
-        "link": "prml/ch07.html"
-    },
-    'next': {
-        "text": "混合模型与期望最大化",
-        "link": "prml/ch09.html"
-    },
+    'prev': undefined,
+    'next': undefined,
     config: { "root": "/", ...projectConfig, branch: 'main' },
-    'pagePath': "prml/ch08.md",
+    'pagePath': "techs/README.md",
     'layoutPath': "_layout.tsx",
-    'outputPath': "prml/ch08.html",
-    'title': "图模型",
+    'outputPath': "techs/index.html",
+    'title': "Techs",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>图模型</h1>'
+            __html: '<h1>Techs</h1>\n<h2 id="docker">Docker<a class="anchor" href="#docker">§</a></h2>\n<p>Docker in Action (2nd)</p>'
         } }),
     'head': React.createElement(React.Fragment, null,
         React.createElement("link", { crossOrigin: "anonymous", href: "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css", integrity: "sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X", rel: "stylesheet" })),
@@ -22,18 +16,20 @@ export default {
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/notes/index.js", type: "module" })),
-    'contentTitle': React.createElement("h1", { key: "0" }, "\u56FE\u6A21\u578B"),
+    'contentTitle': React.createElement("h1", { key: "0" }, "Techs"),
     'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: ''
+            __html: '<h2 id="docker">Docker<a class="anchor" href="#docker">§</a></h2>\n<p>Docker in Action (2nd)</p>'
         } }),
-    'toc': null,
+    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
+            __html: '<nav class="toc"><ol><li><a href="#docker">Docker</a></li></ol></nav>'
+        } }),
     'author': "biskur",
     'contributors': [
         "biskur"
     ],
-    'date': "2021-01-04T16:14:46.000Z",
+    'date': "2021-01-07T15:17:01.000Z",
     'updated': null,
-    'excerpt': "",
+    'excerpt': "Docker Docker in Action (2nd)",
     'cover': undefined,
     'sidebar': [
         {

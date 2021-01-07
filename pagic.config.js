@@ -54,6 +54,13 @@ export default {
                     'ling/i2ql.md',
                 ],
             },
+            {
+                text: 'Docker实战（第二版）',
+                children: [
+                    'techs/docker_in_action_2e/README.md',
+                    'techs/docker_in_action_2e/ch01.md',
+                ]
+            },
         ],
     },
     tools: {

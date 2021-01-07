@@ -133,6 +133,21 @@ export default {
             ],
             "pagePath": "ling/README.md",
             "text": "语言学文献阅读摘记"
+        },
+        {
+            "text": "Docker实战（第二版）",
+            "children": [
+                {
+                    "text": "前言",
+                    "link": "techs/docker_in_action_2e/index.html",
+                    "pagePath": "techs/docker_in_action_2e/README.md"
+                },
+                {
+                    "text": "序言",
+                    "link": "techs/docker_in_action_2e/ch01.html",
+                    "pagePath": "techs/docker_in_action_2e/ch01.md"
+                }
+            ]
         }
     ]
 };
